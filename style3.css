@@ -1,0 +1,271 @@
+@font-face {
+  font-family: "Edu";
+  src: url("./fonts/Edu_NSW_ACT_Foundation/EduNSWACTFoundation-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: "rakkas";
+  src: url("./fonts/Rakkas/Rakkas-Regular.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "oswald";
+  src: url("./fonts/Oswald/Oswald-VariableFont_wght.ttf");
+}
+
+* {
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(Images/back.jpg);
+  background-repeat: round;
+  background-size: contain;
+  background-attachment: fixed;
+
+
+  
+  margin: 0;
+  padding: 0;
+}
+
+/* Header styles */
+header {
+  background: linear-gradient(to bottom, #EC2227, white);
+  padding: 20px 0;
+}
+
+header img {
+  display: block;
+  margin: 0 auto;
+  width: 150px;
+  height: auto;
+  margin-bottom: 10px;
+
+}
+
+nav {
+  text-align: right;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+  font-weight: bold;
+}
+
+nav ul li:hover {
+  color: #800080;
+  cursor: pointer;
+}
+
+ul li:hover {
+  color: #800080;
+  cursor: pointer;
+}
+
+/* main styles */
+main {
+  padding: 20px;
+
+}
+
+main h2 {
+  margin: 20px 0px;
+  padding: 10px;
+
+}
+
+.content {
+  flex: 1;
+}
+
+.design {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.design {
+  background: linear-gradient(to left, #EC2227, white);
+  color: black;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  font-size: 20px;
+  font-family: 'Edu';
+  font-weight: 500;
+}
+
+.design img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+
+.nutrition {
+  background: linear-gradient(to right, #EC2227, white);
+
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: "rakkas";
+  border-radius: 20%;
+}
+
+.nutrition h3 {
+  color: black;
+}
+
+.nutrition ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.nutrition ul li {
+  margin-bottom: 5px;
+}
+
+h2 {
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  background-color: #fff;
+  background-size: 30px;
+}
+
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 5px;
+}
+
+h3 {
+  color: white;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+
+.container1 {
+  display: flex;
+}
+
+.nutrition {
+  flex: 1;
+}
+
+/* FOOTER STYLES */
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  font-family: "oswald";
+}
+
+.container2 {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.logo img {
+  width: 100px;
+  margin: 20px;
+}
+
+.company-info {
+  margin-left: 20px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.contact-form button {
+  padding: 10px 20px;
+  background-color: #EC2227;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #EC2227;
+}
+
+
+
+/* Media Queries */
+
+@media only screen and (max-width: 768px) {
+  .container {
+    flex-direction: row;
+  }
+  header, main, footer {
+    width: 30%;
+  }
+}
+/* CARDs */
+.card-container {
+  display: flex;
+  justify-content: space-around; 
+  flex-wrap: wrap;
+  font-family: "oswald";
+}
+
+.card {
+  width: 300px; 
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+}
+
+.card img {
+  width: 70%;
+  border-radius: 8px 8px 0 0; 
+}
+.card img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;}
+.card-content {
+  padding: 20px;
+}
+
+.card-content h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: black;
+}
+
+.card-content p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.footer-social-icons{
+  margin: 20px;
+}
